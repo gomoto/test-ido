@@ -1,7 +1,8 @@
 const npm = require('ido/npm')
 
 npm.bundle('./package.json', './build/vendor.js', {
-  rev: false,
+  manifest: './build/vendor-manifest.json',
+  rev: true,
   uglify: false,
   sourcemaps: true
 })

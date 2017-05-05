@@ -1,7 +1,8 @@
 const bower = require('ido/bower')
 
 bower.concatenate('./bower.json', './bower_components', './build/vendor.js', {
-  rev: false,
+  manifest: './build/bower-manifest.json',
+  rev: true,
   uglify: false,
   sourcemaps: true
 })

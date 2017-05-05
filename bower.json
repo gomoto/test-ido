@@ -1,0 +1,7 @@
+{
+  "name": "test-ido",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.6.4"
+  }
+}

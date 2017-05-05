@@ -1,0 +1,23 @@
+{
+  "name": "test-ido",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gomoto/test-ido.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gomoto/test-ido/issues"
+  },
+  "homepage": "https://github.com/gomoto/test-ido#readme",
+  "dependencies": {
+    "is-object": "^1.0.1"
+  }
+}

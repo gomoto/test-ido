@@ -1,6 +1,6 @@
-const images = require('ido/images')
+const image = require('ido/image')
 
-images.copy('./images/**/*.jpg', './build/images', {
+image.copy('./images/**/*.jpg', './build/images', {
   // relative to ./build/images
   manifest: 'manifest.json'
 })

@@ -8,6 +8,7 @@ const typescript = require('ido/typescript')
 // })
 typescript.bundle('./src/index.ts', './build/index.js', {
   external: ['mod-a', 'mod-b'],
+  manifest: './build/ts-manifest.json',
   tsconfig: './src/tsconfig.json'
 })
 .then(() => {

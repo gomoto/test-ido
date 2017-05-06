@@ -7,7 +7,10 @@ html.bundle('./index.html', './build/index.html', {
       cwd: './scripts'
     }
   },
-  revManifestPaths: ['./build/images/manifest.json']
+  manifests: [{
+    'pup.jpg': 'pup-12345.jpg',
+    'vendor.js': 'vendor-67890.js'
+  }]
 })
 .then(() => {
   console.log('html done')

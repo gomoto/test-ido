@@ -8,12 +8,14 @@ const typescript = require('ido/typescript')
 // })
 typescript.bundle('./src/index.ts', './build/index.js', {
   external: ['mod-a', 'mod-b'],
-  manifest: './build/ts-manifest.json',
+  minify: true,
+  rev: true,
+  sourcemaps: true,
   tsconfig: './src/tsconfig.json'
 })
-.then(() => {
-  console.log('typescript done')
+.then((metadata) => {
+  console.log('typescript done', metadata)
 })
 .catch((err) => {
-  console.log('typescript error', err)
+  console.log('typescript error', err, err.stack)
 })

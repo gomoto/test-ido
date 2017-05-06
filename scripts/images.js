@@ -1,10 +1,10 @@
 const image = require('ido/image')
 
 image.copy('./images/**/*.jpg', './build/images', {
-  manifest: './build/images/image-manifest.json'
+  rev: false
 })
-.then(() => {
-  console.log('images done')
+.then((manifest) => {
+  console.log('images done', manifest)
 })
 .catch((err) => {
   console.log('images error', err, err.stack)
